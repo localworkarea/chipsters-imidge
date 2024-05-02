@@ -9,7 +9,8 @@
     @include adaptiveValue("border-width", 30, 15,0,1440,480.98);
     pointer-events: none;
     transition: opacity .3s ease;
-    .fp-section-4 & {
+    .fp-section-4 &,
+    .fp-section-5 & {
       opacity: 0;
     }
   }
@@ -19,6 +20,9 @@
   inset: 0;
   z-index: 0;
   overflow: hidden;
+  .loaded & {
+    opacity: 1 !important;
+  }
 }
 
 .logo {
