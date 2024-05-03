@@ -102,7 +102,7 @@
         transform: translate(0%,-50%);
       }
       @media (max-width:$mobileSmall){
-        bottom: toRem(100);
+        bottom: toRem(65);
       }
     }
     @media (min-width:$mobileSmall){
@@ -266,7 +266,7 @@
     @media (max-width:$mobileSmall){
       left: 50%;   
       transform: translate(-50%,0%);
-      bottom: toRem(165);     
+      bottom: toRem(135);     
     }
     @media (max-width: toEm(900.98)) and (max-height: toRem(480.98)) {
       top: 75%;
