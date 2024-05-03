@@ -733,8 +733,8 @@
       z-index: 0;
       top: 50%;
       left: 50%;
-      @include adaptiveValue("width", 1275, 910,2,1920,1366.98);
-      @include adaptiveValue("width", 910,495,3,1366.98,480.98);
+      @include adaptiveValue("width", 1265, 910,2,1920,1366.98);
+      @include adaptiveValue("width", 910,488,3,1366.98,480.98);
       height: auto;
       transform: translate(-50%,-50%);
     }
@@ -848,7 +848,7 @@
     z-index: 2;
     top: 50%;
     left: 50%;
-    transform: translate(-65%,-47%);
+    transform: translate(-64%,-47%);
     background-color: #000;
     @include adaptiveValue("width", 840, 600,2,1920,1366.98);
     @include adaptiveValue("width", 600, 320,3,1366.98,480.98);
