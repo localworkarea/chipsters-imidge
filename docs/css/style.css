@@ -735,8 +735,8 @@ body {
   z-index: 2;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-64%,-47%);
-  transform: translate(-64%,-47%);
+  -webkit-transform: translate(-64.5%,-48%);
+  transform: translate(-64.5%,-48%);
   background-color: #000;
   aspect-ratio: 629/329
 }

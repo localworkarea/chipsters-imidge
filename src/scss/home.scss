@@ -848,7 +848,7 @@
     z-index: 2;
     top: 50%;
     left: 50%;
-    transform: translate(-64%,-47%);
+    transform: translate(-64.5%,-48%);
     background-color: #000;
     @include adaptiveValue("width", 840, 600,2,1920,1366.98);
     @include adaptiveValue("width", 600, 320,3,1366.98,480.98);
