@@ -40,6 +40,11 @@
   .fp-section-4 & {
     background-color:transparent;
   }
+  .fp-section-5 & {
+    @media (max-width: toEm(900.98)) and (max-height: toRem(480.98)) {
+      opacity: 0;
+    }
+  }
   img {
     height: auto;
     @include adaptiveValue("width", 240, 140,0,1440,480.98);
