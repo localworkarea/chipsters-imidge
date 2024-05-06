@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
-  font-family: BebasNeue Bold;
+  font-family: BebasNeueCyrillic;
   font-display: swap;
-  src: url("../fonts/BebasNeue Bold.woff2") format("woff2");
+  src: url(../fonts/BebasNeueCyrillic.woff2) format("woff2");
   font-weight: 400;
   font-style: normal
 }
@@ -28,7 +28,7 @@ html {
 body {
   color: #000;
   line-height: 1;
-  font-family: "BebasNeue Bold",sans-serif;
+  font-family: BebasNeueCyrillic,sans-serif;
   font-size: 1rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -39,7 +39,7 @@ body {
 button,
 input,
 textarea {
-  font-family: "BebasNeue Bold",sans-serif;
+  font-family: BebasNeueCyrillic,sans-serif;
   font-size: inherit;
   line-height: inherit;
   color: inherit;
@@ -234,7 +234,6 @@ body {
 .scroll__txt {
   color: #fff;
   text-align: center;
-  text-transform: uppercase;
   opacity: 0;
   -webkit-transform: translate(0,100%);
   transform: translate(0,100%);
@@ -729,6 +728,12 @@ body {
   transition: -webkit-transform .35s ease;
   transition: transform .35s ease;
   transition: transform .35s ease,-webkit-transform .35s ease
+}
+.section-05__txt span {
+  display: inline-block;
+  scale: 1.08;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px)
 }
 .video-youtube__body {
   position: absolute;

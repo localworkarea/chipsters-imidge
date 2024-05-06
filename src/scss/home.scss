@@ -839,7 +839,13 @@
   }
 }
 
-
+.section-05__txt {
+  span {
+    display: inline-block;
+    scale: 1.08;
+    transform: translateY(-1px);
+  }
+}
 
 .video-youtube {
   // .video-youtube__body

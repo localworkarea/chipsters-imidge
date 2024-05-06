@@ -80,7 +80,7 @@
     @include adaptiveValue("font-size", 25, 22,0,1440,480.98);
     color: #fff;
     text-align: center;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     @include adaptiveValue("margin-bottom", 18, 14,0,1440,480.98);
     opacity: 0;
     transform: translate(0,100%);
