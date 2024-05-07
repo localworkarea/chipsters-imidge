@@ -245,6 +245,20 @@ body {
   opacity: 0;
   transition: opacity .7s ease
 }
+.loaded .section-00 .scroll {
+  opacity: 1;
+  transition-delay: 1.5s
+}
+.loaded .section-00 .scroll__txt {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0);
+  transition-delay: 1.65s
+}
+.loaded .section-00 .scroll__ic {
+  opacity: 1;
+  transition-delay: 1.65s
+}
 .section-01.active-section .scroll,
 .section-02.active-section .scroll,
 .section-03.active-section .scroll {
@@ -1094,6 +1108,10 @@ body {
   .logo {
     top: .375rem!important
   }
+  .section-00 .scroll {
+    justify-content: flex-start!important;
+    padding-left: 1.25rem
+  }
   .section-03.active-section .scroll {
     justify-content: flex-start!important;
     padding-left: 1.875rem
@@ -1107,7 +1125,8 @@ body {
   }
   .section-00__btn-wr {
     top: unset!important;
-    bottom: 0!important
+    bottom: 0!important;
+    right: 5%!important
   }
   .section-00__chips {
     display: none
@@ -1239,7 +1258,7 @@ body {
     max-width: 9.375rem
   }
   .loaded .section-00__btn-wr {
-    bottom: 4.0625rem
+    bottom: 10rem
   }
   .section-00__btn-wr {
     bottom: 0;

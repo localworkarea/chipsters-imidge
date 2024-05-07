@@ -102,7 +102,7 @@
         transform: translate(0%,-50%);
       }
       @media (max-width:$mobileSmall){
-        bottom: toRem(65);
+        bottom: toRem(160);
       }
     }
     @media (min-width:$mobileSmall){
@@ -118,8 +118,7 @@
     @media (max-width: toEm(900.98)) and (max-height: toRem(480.98)) {
       top: unset !important;
       bottom: toRem(0) !important;
-      // left: 50% !important;
-      // transform: translate(-50%,0) !important;
+      right: 5% !important;
     }
 	}
 	// .section-00__btn

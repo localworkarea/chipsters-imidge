@@ -96,6 +96,32 @@
   }
 }
 
+.section-00 {
+    .scroll {
+      .loaded & {
+        opacity: 1;
+        transition-delay: 1.5s
+      }
+      @media (max-width: toEm(900.98)) and (max-height: toRem(480.98)) {
+        justify-content: flex-start !important;
+        padding-left: toRem(20);
+      }
+    }
+    .scroll__txt {
+      .loaded & {
+        opacity: 1;
+        transform: translate(0,0);
+        transition-delay: 1.65s;
+      }
+    }
+    .scroll__ic {
+      .loaded & {
+        opacity: 1;
+        transition-delay: 1.65s;
+      }
+    }
+}
+
 .section-01,
 .section-02,
 .section-03 {
@@ -115,6 +141,8 @@
     }
   }
 }
+
+
 
 .section-03 {
   &.active-section {
