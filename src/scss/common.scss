@@ -88,30 +88,62 @@
   }
   // .scroll__ic
   &__ic {
+    position: relative;
     opacity: 0;
     transition: opacity .7s ease;
     img {
       @include adaptiveValue("height", 76, 52,0,1440,480.98);
     }
+    &::before,
+    &::after {
+      content:'';
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: toRem(100);
+      height: toRem(100);
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.3);
+      // border: 15px solid rgba(255, 255, 255, 1);
+      @media (max-width:520px){
+        width: toRem(86);
+        height: toRem(86);
+      }
+    }
+    &:before {
+      animation: mouse-circles 2s ease-out 0s forwards infinite;
+    }
+    &::after {
+      animation: mouse-circles 2s ease-out 0.5s forwards infinite;
+    }
+  }
+}
+
+@keyframes mouse-circles {
+  0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+  }
+
+  100% {
+      transform: translate(-50%, -50%) scale(1.5);
+      opacity: 0;
   }
 }
 
 .section-00 {
     .scroll {
+      
       .loaded & {
         opacity: 1;
         transition-delay: 1.5s
       }
+      // background-image: unset;
       @media (max-width: toEm(900.98)) and (max-height: toRem(480.98)) {
         justify-content: flex-start !important;
         padding-left: toRem(20);
-      }
-    }
-    .scroll__txt {
-      .loaded & {
-        opacity: 1;
-        transform: translate(0,0);
-        transition-delay: 1.65s;
       }
     }
     .scroll__ic {
